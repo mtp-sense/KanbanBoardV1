@@ -1,38 +1,33 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.desktop {
+  border: 1px solid gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.addTaskContainer {
+  width: 20em;
+  margin-bottom: 2em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.stages {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
 }
-
-.App-link {
-  color: #61dafb;
+.stageCard {
+  width: 20%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row {
+  margin-bottom: 0.5em;
+}
+ul {
+  list-style-type: none;
+}
+.task {
+  margin-bottom: 0.5em;
+  margin-right: 1.6rem;
+  padding: 1em;
+}
+.taskButtons {
+  display: flex;
+  flex-direction: row;
 }
