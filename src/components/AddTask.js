@@ -10,6 +10,7 @@ function AddTask(props) {
           type="text"
           value={props.taskTitle}
           onChange={(e) => props.onTaskTitleChange(e.target.value)}
+          disabled={props.isEdit}
         />
       </div>
       <div className="row">

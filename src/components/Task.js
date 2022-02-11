@@ -8,6 +8,7 @@ function Task(props) {
     backwardBtnHandler,
     forwardBtnHandler,
     deleteBtnHandler,
+    editBtnHandler
   } = props;
   return (
     <div className="card task">
@@ -23,23 +24,19 @@ function Task(props) {
         </h6>
       </div>
       <div className="taskButtons">
-        <button
-          onClick={() => backwardBtnHandler(taskname)}
-          className="icon-only"
-        >
-          <i className="material-icons">Backward</i>
+        <button onClick={() => backwardBtnHandler(taskname)}>
+          <i>Backward</i>
         </button>
-        <button
-          onClick={() => forwardBtnHandler(taskname)}
-          className="icon-only"
-        >
-          <i className="material-icons">Forward</i>
+        <button onClick={() => forwardBtnHandler(taskname)}>
+          <i>Forward</i>
         </button>
-        <button
-          onClick={() => deleteBtnHandler(taskname)}
-          className="icon-only"
-        >
-          <i className="material-icons">Delete</i>
+        <button onClick={() => deleteBtnHandler(taskname)}>
+          <i>Delete</i>
+        </button>
+      </div>
+      <div>
+        <button onClick={()=>editBtnHandler(taskname)}>
+          <i>Edit</i>
         </button>
       </div>
     </div>

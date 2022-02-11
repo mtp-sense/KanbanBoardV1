@@ -12,9 +12,11 @@
 .stages {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 1.5rem;
 }
 .stageCard {
   width: 20%;
+  background-color: lightblue !important;
 }
 .row {
   margin-bottom: 0.5em;
